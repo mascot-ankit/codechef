@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	while(n--)
+	{
+	   string s;
+	   cin>>s;
+	   int l,ctr=0;
+	   l=s.size();
+	   //cout<<"\n"<<l<<"\n";
+	   while(l>0)
+	   {
+	       if(s[l-1]=='1')ctr++;
+	       l=l-1;
+	   }
+	  // cout<<ctr;
+	   if(ctr%2==0)cout<<"LOSE"<<endl;
+	   else cout<<"WIN"<<endl;
+	}
+	
+	return 0;
+}
